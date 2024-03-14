@@ -1,0 +1,105 @@
+:root {
+    --accent: #080808;
+    --submit: #080808;
+    --background: #F8F8F8;
+    --hover: #404040;
+}
+
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    background-color: var(--background);
+   margin: 0;
+   padding: 0;
+}
+
+main {
+    width: 100vw;
+    height: 87vh;
+}
+
+#left {
+    position: relative;
+    text-align: center;
+    float: left;
+    width: 49%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle {
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(#FFC000, #FFC000, #484848);
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+    margin: 0;
+   }
+
+h1 {
+    font-size: 7vh;
+    color: #F8F8F8;
+    text-shadow: 1px 1px #080808;
+    position: absolute;
+}
+
+#right {
+    float: right;
+    width: 49%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-left: 10px double var(--accent);
+}
+
+h2 {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    color: var(--accent);
+}
+
+form {
+    width: 100%;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+label {
+    margin-bottom: 5px;
+    color: var(--accent);
+}
+
+input {
+    background-color: #F8F8F8;
+    color: #080808;
+}
+
+textarea {
+    background-color: #F8F8F8;
+    color: #080808;
+}
+
+#submit {
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    padding: 2px 0 2px 0;
+    background-color: var(--submit);
+    color: var(--background);
+}
+
+#submit:hover {
+    background-color: var(--hover);
+}

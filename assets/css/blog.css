@@ -1,0 +1,32 @@
+:root {
+    --accent: #080808;
+    --submit: #080808;
+    --background: #F8F8F8;
+    --hover: #404040;
+}
+
+#back {
+    display: flex;
+    justify-content: flex-end;
+    order: -1;
+    margin: 10px;
+    padding: 2px 5px 2px 5px;
+    text-decoration: none;
+    text-align: center;
+    background-color: var(--accent);
+    color: var(--background);
+}
+#back:hover {
+    background-color: var(--hover);
+}
+
+section {
+    height: 70vh;
+}
+
+footer {
+    height: 10vh;
+    border-top: 10px double var(--accent);
+    display: flex;
+    align-items: flex-end;
+}
