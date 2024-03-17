@@ -20,6 +20,26 @@ main {
     height: 87vh;
 }
 
+header {
+    height: 10vh;
+    width: 100vw;
+    border-bottom: 10px double var(--accent);
+    display: flex;
+    justify-content: flex-end;
+}
+
+#theme {
+    order: 1;
+    margin: 10px;
+    display: flex;
+    background-color: var(--accent);
+    color: var(--background);
+}
+
+#theme:hover {
+    background-color: var(--hover)
+}
+
 #left {
     position: relative;
     text-align: center;
