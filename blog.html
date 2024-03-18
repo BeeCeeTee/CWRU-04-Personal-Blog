@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Posts</title>
+    <script src="https://kit.fontawesome.com/64e53fb2c3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./assets/css/styles.css" />
     <link rel="stylesheet" href="./assets/css/blog.css" />
 </head>
+
+
 <body>
     <main>
         <header>
@@ -14,13 +17,16 @@
                 <h2 id="page-title">My First Blog</h2>
             </div>
             <div id="right">
-                <button id="theme">Light/Dark Mode</button>
-                <a href="index.html" class="button" id="back">Back</a>
+                <button id="theme"><i class="fa-solid fa-circle-half-stroke"></i></button>
+                <form action="./index.html">
+                    <button id="back"><i class="fa-solid fa-left-long"></i>&nbsp;Back</button>
+                    <!-- Opted to use a button within a form to preserve both the 3d bevel look of the button and the link functionality -->
+                </form>
             </div>
         </header>
 
         <section id="output-section">
-            
+            <!-- Dynamically-created html elements will go here -->
         </section>
 
         <footer>

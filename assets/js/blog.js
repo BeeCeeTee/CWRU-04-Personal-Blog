@@ -1,6 +1,5 @@
 let outputSection = document.getElementById('output-section');
-
-
+const backButton = document.getElementById('back');
 
 function displayUserInput() {
     // let blogPostItem = JSON.parse(localStorage.getItem("blogPost"));

@@ -1,10 +1,4 @@
-:root {
-    --accent: #080808;
-    --submit: #080808;
-    --background: #F8F8F8;
-    --hover: #404040;
-}
-
+/* HEADER */
 header {
     height: 10vh;
     width: 100vw;
@@ -31,12 +25,14 @@ header {
     justify-content: flex-end;
 }
 
+form {
+    display: flex;
+}
+
 #back {
     display: flex;
+    align-items: center;
     margin: 10px;
-    padding: 2px 5px 2px 5px;
-    text-decoration: none;
-    text-align: center;
     background-color: var(--accent);
     color: var(--background);
 }
@@ -48,18 +44,21 @@ header {
     order: 1;
     margin: 10px;
     display: flex;
+    align-items: center;
     background-color: var(--accent);
     color: var(--background);
 }
 
 #theme:hover {
-    background-color: var(--hover)
+    background-color: var(--hover);
 }
 
+/* BLOG POSTS SECTION */
 section {
     height: 70vh;
 }
 
+/* FOOTER */
 footer {
     height: 12vh;
     border-top: 10px double var(--accent);

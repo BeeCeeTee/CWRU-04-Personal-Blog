@@ -1,25 +1,10 @@
-:root {
-    --accent: #080808;
-    --submit: #080808;
-    --background: #F8F8F8;
-    --hover: #404040;
-}
-
-* {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-body {
-    background-color: var(--background);
-   margin: 0;
-   padding: 0;
-}
-
+/* GENERAL */
 main {
     width: 100vw;
     height: 87vh;
 }
 
+/* HEADER */
 header {
     height: 10vh;
     width: 100vw;
@@ -32,6 +17,7 @@ header {
     order: 1;
     margin: 10px;
     display: flex;
+    align-items: center;
     background-color: var(--accent);
     color: var(--background);
 }
@@ -40,6 +26,7 @@ header {
     background-color: var(--hover)
 }
 
+/* LEFT SIDE */
 #left {
     position: relative;
     text-align: center;
@@ -68,6 +55,7 @@ h1 {
     position: absolute;
 }
 
+/* RIGHT SIDE */
 #right {
     float: right;
     width: 49%;
