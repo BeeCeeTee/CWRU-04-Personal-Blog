@@ -1,32 +1,40 @@
-const outputSection = $('#output-section');
+let outputSection = document.getElementById('output-section');
+
+
 
 function displayUserInput() {
-    const blogPostItem = JSON.parse(localStorage.getItem('blogPost'));
-    console.log(blogPostItem);
-    // const div = document.createElement('div');
+    // let blogPostItem = JSON.parse(localStorage.getItem("blogPost"));
+    //     outputSection.textContent = blogPostItem;
+    //     outputSection.textContent = blogPostItem;
+    //     outputSection.textContent = blogPostItem;
+    //     console.log(blogPostItem);
     
-    // const titleOut = document.createElement('h4');
-    // titleOut.textContent = blogPosts.title;
-    // div.appendChild(titleOut);
+    let getUsername = localStorage.getItem('username');
+    let getTitle = localStorage.getItem('title');
+    let getContent = localStorage.getItem('content');
     
-    // const contentOut = document.createElement('p');
-    // contentOut.textContent = blogPosts.content;
-    // div.appendChild(contentOut);
+    let titleOut = document.createElement('h4');
+        titleOut.setAttribute('style', 'border-bottom: 1px solid var(--accent)')
+    let titleText = document.createTextNode(getTitle);
+    titleOut.appendChild(titleText);
 
-    // const userOut = document.createElement('p');
-    // userOut.textContent = blogPosts.username;
-    // div.appendChild(userOut);
+    let contentOut = document.createElement('p');
+        contentOut.setAttribute('style', 'font-style: italic')
+    let contentText = document.createTextNode(getContent);
+    contentOut.appendChild(contentText);
 
-    // document.body.appendChild(div);
+    let userOut = document.createElement('p');
+    let userText = document.createTextNode(`Posted by: ${getUsername}`);
+    userOut.appendChild(userText);
 
-    // console.log(localStorage.getItem('username'));
-    // console.log(localStorage.getItem('title'));
-    // console.log(localStorage.getItem('content'));
+    let article = document.createElement('article');
+        article.setAttribute('style', 'border: 2px solid var(--accent); margin: 10px; padding: 10px; display: flex; flex-direction: column')
+        article.appendChild(titleOut);
+        article.appendChild(contentOut);
+        article.appendChild(userOut);
+
+    let outputEl = document.getElementById('output-section')
+    outputEl.appendChild(article);
 }
 
-
-function init() {
-    displayUserInput();
-  }
-
-  init();
+displayUserInput();
