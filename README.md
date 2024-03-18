@@ -13,7 +13,10 @@ To use, simply click the link below or enter the following URL into the address 
 
 
 
-Enter some text in the form, press the 'Submit' button, and the site will re-direct to the second page, where you can view the blog posts. To return to the form page to submit another blog entry, click the 'Back' button in the upper right of the page. The 'Theme' button can also be pressed to toggle between light and dark mode.
+Enter some text into the form, press the 'Submit' button, and the site will re-direct to the second page, where you can view the blog posts. To return to the form page to submit another blog entry, click the 'Back' button in the upper right of the page. The 'Theme' button can also be pressed to toggle between light and dark mode.
 
 ## III. Credits
-This project was completed by Brendan Trepal using only the starter code provided via Bootcamp Spot.
+This project was completed by Brendan Trepal using the mockup provided via Bootcamp Spot for reference.
+
+Additional credits:
+All icons sourced fron FontAwesome.com
