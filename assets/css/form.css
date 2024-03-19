@@ -5,9 +5,9 @@ main {
 }
 
 /* HEADER */
+/* Create and style the header and light/dark button */
 header {
     height: 10vh;
-    width: 100vw;
     border-bottom: 10px double var(--accent);
     display: flex;
     justify-content: flex-end;
@@ -22,11 +22,13 @@ header {
     color: var(--background);
 }
 
+/* Create light/dark button hover effect */
 #theme:hover {
     background-color: var(--hover)
 }
 
 /* LEFT SIDE */
+/* Create left half of page and center items */
 #left {
     position: relative;
     text-align: center;
@@ -38,6 +40,7 @@ header {
     align-items: center;
 }
 
+/* Create the circle graphic */
 .circle {
     display: flex;
     justify-content: center;
@@ -48,6 +51,7 @@ header {
     margin: 0;
    }
 
+/* Create and position the title */
 h1 {
     font-size: 7vh;
     color: #F8F8F8;
@@ -56,6 +60,7 @@ h1 {
 }
 
 /* RIGHT SIDE */
+/* Create right half of page and position form elements */
 #right {
     float: right;
     width: 49%;
@@ -108,6 +113,7 @@ textarea {
     color: var(--background);
 }
 
+/* Create submit button hover effect */
 #submit:hover {
     background-color: var(--hover);
 }

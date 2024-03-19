@@ -1,12 +1,11 @@
 /* HEADER */
 header {
-    height: 10vh;
-    width: 100vw;
+    height: 10%;
     border-bottom: 10px double var(--accent);
     display: flex;
     justify-content: space-between;
 }
-
+/* Style the page title and justify it to the left */
 #left {
     display: flex;
     justify-content: flex-start;
@@ -20,6 +19,7 @@ header {
     color: var(--accent);
 }
 
+/* Style the back and light/dark buttons */
 #right {
     display: flex;
     justify-content: flex-end;
@@ -36,6 +36,8 @@ form {
     background-color: var(--accent);
     color: var(--background);
 }
+
+/* Create back button hover effect */
 #back:hover {
     background-color: var(--hover);
 }
@@ -49,18 +51,23 @@ form {
     color: var(--background);
 }
 
+/* Create light/dark button hover effect */
 #theme:hover {
     background-color: var(--hover);
 }
 
 /* BLOG POSTS SECTION */
+/* Set dimensions and margins of main section */
 section {
-    height: 70vh;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 80%;
 }
 
 /* FOOTER */
+/* Style the footer section */
 footer {
-    height: 12vh;
+    height: 10%;
     border-top: 10px double var(--accent);
     display: flex;
     flex-direction: column;

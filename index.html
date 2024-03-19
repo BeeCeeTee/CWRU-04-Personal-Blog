@@ -22,21 +22,21 @@
 
         <section id="right">
             <h2>What's on your mind?</h2>
-            <form name="form1">
+            <form id="form" name="form1" action="/blog.html">
                 <div class="input-group">
                     <label for="username">Username</label>
-                    <input type="text" name="u" id="username"/>
+                    <input type="text" name="u" id="username" required/>
                 </div>
                 <div class="input-group">
                     <label for="title">Title</label>
-                    <input type="text" name="t" id="title"/>
+                    <input type="text" name="t" id="title" required/>
                 </div>
                 <div class="input-group">
                     <label for="content">Content</label>
-                    <textarea name="c" id="content"></textarea>
+                    <textarea name="c" id="content" required></textarea>
                 </div>
                 <div class="input-group">
-                    <a href="blog.html" class="button" id="submit">Submit</a>
+                        <input type="submit" id="submit"/>
                 </div>
             </form>
         </section>

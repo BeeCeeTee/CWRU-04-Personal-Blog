@@ -1,39 +1,38 @@
-let outputSection = document.getElementById('output-section');
-const backButton = document.getElementById('back');
-
+// Get input array from local storage and parse it
 function displayUserInput() {
-    // let blogPostItem = JSON.parse(localStorage.getItem("blogPost"));
-    //     outputSection.textContent = blogPostItem;
-    //     outputSection.textContent = blogPostItem;
-    //     outputSection.textContent = blogPostItem;
-    //     console.log(blogPostItem);
-    
-    let getUsername = localStorage.getItem('username');
-    let getTitle = localStorage.getItem('title');
-    let getContent = localStorage.getItem('content');
-    
-    let titleOut = document.createElement('h4');
-        titleOut.setAttribute('style', 'border-bottom: 1px solid var(--accent)')
-    let titleText = document.createTextNode(getTitle);
-    titleOut.appendChild(titleText);
+    let blogOutput = JSON.parse(localStorage.getItem('output'));
 
-    let contentOut = document.createElement('p');
-        contentOut.setAttribute('style', 'font-style: italic')
-    let contentText = document.createTextNode(getContent);
-    contentOut.appendChild(contentText);
+    // Iterate through each property of each object within the array and store them to new variables
+    for (let i = 0; i < blogOutput.length; i++) {
 
-    let userOut = document.createElement('p');
-    let userText = document.createTextNode(`Posted by: ${getUsername}`);
-    userOut.appendChild(userText);
+        let getUsername = blogOutput[i].username;
+        let getTitle = blogOutput[i].title;
+        let getContent = blogOutput[i].content;
+        
+        // Dynamically create and style new elements, set the text content to the saved user input, and append them to their parent elements
+        let titleOut = document.createElement('h4');
+            titleOut.setAttribute('style', 'border-bottom: 1px solid var(--accent)')
+        let titleText = document.createTextNode(getTitle);
+        titleOut.appendChild(titleText);
 
-    let article = document.createElement('article');
-        article.setAttribute('style', 'border: 2px solid var(--accent); margin: 10px; padding: 10px; display: flex; flex-direction: column')
-        article.appendChild(titleOut);
-        article.appendChild(contentOut);
-        article.appendChild(userOut);
+        let contentOut = document.createElement('p');
+            contentOut.setAttribute('style', 'font-style: italic')
+        let contentText = document.createTextNode(getContent);
+        contentOut.appendChild(contentText);
 
-    let outputEl = document.getElementById('output-section')
-    outputEl.appendChild(article);
-}
+        let userOut = document.createElement('p');
+            userOut.setAttribute('style', 'color: var(--accent)')
+        let userText = document.createTextNode(`Posted by: ${getUsername}`);
+        userOut.appendChild(userText);
+
+        let article = document.createElement('article');
+            article.setAttribute('style', 'border: 2px solid var(--accent); margin: 10px; padding: 10px; display: flex; flex-direction: column')
+            article.appendChild(titleOut);
+            article.appendChild(contentOut);
+            article.appendChild(userOut);
+
+        let outputEl = document.getElementById('output-section')
+        outputEl.appendChild(article);
+}}
 
 displayUserInput();
